@@ -1,0 +1,19 @@
+<DOCTYPE html>
+<html lang = "en">
+	<head>
+		<title>Implicit Link Assignment</title>
+		<meta charset="uft-8">
+	</head>
+	<body>
+		<nav>
+			<a href="Assignment.html">Home</a>
+			<a href="cute-dog.html">Dog Picture</a>
+			<a href="Dog_Video.html">Dog Video</a>
+		</nav>
+		<main>
+			<p> I got to this page through another page</p>
+			<img src="C:\Users\julia\Documents\myRespository\The-Tech-Academy\HTML-and-CSS-Course\Assignment doc\cute-dog.jpg"
+			style="width:162px;height:142px;">
+		</main>
+	</body>
+</html>
