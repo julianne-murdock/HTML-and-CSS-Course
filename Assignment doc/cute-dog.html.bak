@@ -12,7 +12,7 @@
 		</nav>
 		<main>
 			<p> I got to this page through another page</p>
-			<img src="C:\Users\julia\Documents\myRespository\The-Tech-Academy\HTML-and-CSS-Course\Assignment doc\cute-dog.jpg"
+			<img src="C:\Users\julia\Documents\GitHub\HTML-and-CSS-Course\Assignment doc\cute-dog.jpg"
 			style="width:162px;height:142px;">
 		</main>
 	</body>
