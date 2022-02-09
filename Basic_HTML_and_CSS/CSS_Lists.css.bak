@@ -6,6 +6,8 @@ ul{
 	list-style-type: square;
 }
 
-shadow {
+#example1 {
+	border: 1px solid;
+	padding: 10px;
 	box-shadow: 10px 10px 8px #888888;
 }
