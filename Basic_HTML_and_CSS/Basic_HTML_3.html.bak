@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="Basic_CSS_1.css">
+	<title> Basic HTML 3 </title>
+</head>
+<body>
+	<div style="color: blue">
+		<h2> This is blue text created by a div tag</h2>
+	</div>
+	<p> This paragraph is written in Aquamarine and aligned to the right by using the style tag <p>
+	
+</body>
+</html>
