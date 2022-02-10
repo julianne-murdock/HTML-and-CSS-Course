@@ -1,0 +1,90 @@
+<!DOCTYPE hmtl>
+<html lang="en">
+	<head>
+		<title>Defining and Learning Challenge Step 247</title>
+	</head>
+	<body>
+		<!-- WHAT I NEED TO DO -->
+		<section>
+		<h1> Define The Following Terms!</h1>
+		<ul>
+			<li>&#60;article&#62; tag</li>
+			<li>&#60;details&#62; tag</li>
+			<li>&#60;summary&#62; tag</li>
+			<li>&#60;time&#62; tag and datetime attribute</li>
+		</ul>
+		</section>
+		<!-- END WHAT I NEED TO DO -->
+		
+		<!-- ARTICLE TAG -->
+		<section>
+		<h2>&#60;article&#62; tag</h2>
+		<p> 
+			The &#60;article&#62; tag should make sense on its own 
+			and it should be possible to distribute it independently from the 
+			rest of the site.
+		</p>
+		<p>The following is an example of it being used</p>
+		<article>
+			<h4>Microsoft Edge</h4>
+			<p>
+				Microsoft Edge is a web browser developed by Microsoft, 
+				released in 2015. Microsoft Edge replaced Internet Explorer.
+			</p>
+		</article>
+		</section>
+		<!-- END ARTICLE TAG -->
+		
+		<!-- DETAILS TAG -->
+		<section>
+		<h2>&#60;details&#62; tag</h2>
+		<p> 
+			The &#60;details&#62; tag is where you specify details 
+			that the user can open and close on demand:
+		</p>
+		<p>The following is an example of it being used</p>
+		<details>
+			<summary>Epcot Center</summary>
+			<p>
+				Epcot is a theme park at Walt Disney World Resort featuring
+				exciting attractions, international pavilions, award-winning fireworks 
+				and seasonal special events.
+			</p>
+		</details>
+		</section>
+		<!-- END DETAILS TAG -->
+		
+		<!-- SUMMARY TAG -->
+		<section>
+		<h2>&#60;summary&#62; tag</h2>
+		<p> The &#60;summary&#62; tag defines a visible heading for the &#60;details&#62; element.</p>
+		<p>The following is an example of it being used</p>
+		<details>
+			<summary>Epcot Center</summary>
+			<p>
+				Epcot is a theme park at Walt Disney World Resort featuring
+				exciting attractions, international pavilions, award-winning fireworks 
+				and seasonal special events.
+			</p>
+		</details>
+		</section>
+		<!-- END SUMMARY TAG -->
+		
+		<!-- TIME AND DATETIME ATTRIBUTE -->
+		<section>
+		<h2>&#60;time&#62; tag and datetime attribute</h2>
+		<p> 
+			The &#60;time&#62; tag defines a specific time. The datetime
+			attribute of this element is used translate the time into a 
+			machine-readable format so that browsers can offer to add date 
+			reminders through the user's calendar, and search engines can produce 
+			smarter search results.
+		</p>
+		<p>The following is an example of it being used</p>
+		<p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
+
+		<p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p>
+		</section>
+		<!-- END TIME AND DATETIME ATTRIBUTE -->
+	</body>
+</html>
