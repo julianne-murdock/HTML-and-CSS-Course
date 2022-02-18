@@ -29,9 +29,6 @@ SELECT ALL SQUARES IN THE ARRAY
     border: 1px solid black;
     border-radius: 25%;
     cursor: pointer;
-    transition-property: ;
-    transition-duration: ;
-    transition-delay: ;
     transition: transform .5s ease-in-out;
 }
 
