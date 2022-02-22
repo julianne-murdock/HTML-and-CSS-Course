@@ -178,6 +178,7 @@ font-size: 18px;
 font-weight: 900;
 padding: 5px 20px 20px 20px;
 border: 1px dotted #fff;
+padding: 5px;
 }
 
 /*======================================
@@ -212,19 +213,19 @@ CONTACT STYLES
     width: 70%;
     text-align: center;
     margin: 0 auto;
-    color: #131618;
-    font-weight: 900;
+    color: #13161B;
+    font-weight: 500;
     font-size: 1.5em;
     font-variant: small-caps;
-    letter-spacing: .4pt;
-    word-spacing: .3pt;
+    letter-spacing: 0pt;
+    word-spacing: 0pt;
 }
 
 .reservation h2 span {
     width: 70%;
     text-align: center;
     margin: 0 auto;
-    color: #131618;
+    color: #13161B;
     font-weight: 900;
     font-size: 1.5em;
     font-variant: small-caps;
@@ -245,11 +246,15 @@ CONTACT STYLES
     color: #8D8E8F;
     padding: 12px 12px;
     width: 70%;
+    border: 1px solid #808080;
+    margin: 2% auto;
     border-radius: 7px;
     background: rgb(227, 222, 222);
     box-shadow: 2px 3px 3px 0px rgba(0,0,0,0.3);
     font-family: 'Raleway', sans-serif;
 }
+
+
 
 .reservation input[type="text"] {
     font-size: 15px;
@@ -286,6 +291,9 @@ CONTACT STYLES
     cursor: pointer;
     font-family: "Raleway", sans-serif;
     font-weight: 600;
+    position: relative;
+    display: inline;
+    float: right;
 }
 
 .terms:hover {
