@@ -1,0 +1,17 @@
+table {
+  table-layout: fixed ;
+  width: 100% ;
+  border: 1px solid;
+  text-align: center;
+}
+
+td {
+  width: 25% ;
+  border: 1px solid;
+}
+
+th {
+  background-color: #04AA6D;
+  color: white;
+  border: 1px solid;
+}
