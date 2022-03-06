@@ -210,9 +210,28 @@ user-select: none;
   background: #0AB1CE;
   width: 80px;
   border-radius: 45px;
+  transition: 0.3s ease;
+}
+
+.previous-page:hover{
+  transform: translateX(-5px);
+}
+
+.next-page:hover{
+  transform: translateX(5px);
 }
 
 .current-page, .dots {
   background: #ccc;
   width: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.active{
+  background: #0AB1CE;
+}
+
+.disable{
+  background: #ccc;
 }
