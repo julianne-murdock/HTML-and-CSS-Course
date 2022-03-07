@@ -282,10 +282,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       }
       
       $(".pagination").append(
-        $("<li>").addClass("page-item").addClass("previous-page").append($
-      )
+        $("<li>").addClass("page-item").addClass("previous-page").append($("<a>").addClass("page-link").attr({href: "javascript:void(0)"}).text("Prev")),
+        $("<li>").addClass("page-item").addClass("next-page").append($("<a>").addClass("page-link").attr({href: "javascript:void(0)"}).text("Next")),
+      );
+          $(".posts").show();
+          showPage(1);
 
-      
     });
   </script>
 
