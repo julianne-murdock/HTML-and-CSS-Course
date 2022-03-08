@@ -1,68 +1,3 @@
-/* RESET RULES
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-:root {
-  --black: #3a3a3a;
-  --white: #fff;
-  --green: #49b293;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-ol {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-body {
-  margin: 50px 0;
-  color: var(--black);
-  font: 1rem/1.3 sans-serif;
-}
-
-.author-archive {
-  padding: 1.5rem;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-h1 {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-h1 a {
-  transition: all 0.1s;
-}
-
-h1 a:hover {
-  background: var(--green);
-  color: var(--white);
-}
-
-input[type="radio"] {
-  position: absolute;
-  left: -9999px;
-}
-
-/*------------------------
-Pagination
--------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 *{
@@ -101,8 +36,7 @@ Pagination
 }
 
 .card-image{
-  max-height: 600px;
-  min-height: 350px;
+  max-height: 200px;
 }
 
 .card-image img{
@@ -125,7 +59,6 @@ Pagination
 .card-info p{
   font-size: 1em;
   margin-bottom: 5px;
-  min-height: 150px;
 }
 
 .pagination{
@@ -176,31 +109,4 @@ Pagination
 
 .disable{
   background: #ccc;
-}
-
-/*----------------
-Page Filtering
---------------*/
-
-section ul{
-  padding: 20px;
-  width: 1280px;
-  margin: 40px auto;
-  display: flex;
-  margin-bottom: 10px;
-  margin-left: 385px;
-}
-
-section ul li{
-  list-style: none;
-  background: #D3D3D3;
-  padding: 8px 20px;
-  margin: 5px;
-  letter-spacing: 1px;
-  cursor: pointer;
-}
-
-section ul li.active{
-  background: #03a9f4;
-  color: #fff;
 }
