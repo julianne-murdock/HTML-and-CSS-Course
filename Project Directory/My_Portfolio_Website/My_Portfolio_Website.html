@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="./CSS/filtering.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 </style>
@@ -53,243 +54,334 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   </header>
 
    
-  <section class="author-archive">
-    <div class="container">
-    <input type="radio" id="All" name="categories" value="All" checked>
-    <input type="radio" id="Art" name="categories" value="Art">
-    <input type="radio" id="Photography" name="categories" value="Photography">
-    <input type="radio" id="jQuery" name="categories" value="jQuery">
-    <input type="radio" id="WordPress" name="categories" value="WordPress">
+  <section>
+    <ul>
+      <li class="list active" data-filter="All">All</li>
+      <li class="list" data-filter="Art">Art</li>
+      <li class="list" data-filter="Photography">Photography</li>
+      <li class="list" data-filter="GitHub">GitHub</li>
+    </ul>
+  </section>
+    
+      <div class="container">
+        <div class="card-content" style="display: none">
+          <div class="card Art">
+            <div class="card-image"><img src="./Images/Thumb/Thumbnail_1.png" alt=""></div>
+            <div class="card-info">
+              <h3>Card 01</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="card Art">
+            <div class="card-image"><img src="./Images/Thumb/Thumbnail_2.png" alt=""></div>
+            <div class="card-info">
+              <h3>Card 02</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="card Art">
+            <div class="card-image"><img src="./Images/Thumb/Thumbnail_3.png" alt=""></div>
+            <div class="card-info">
+              <h3>Card 03</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="card Art">
+            <div class="card-image"><img src="./Images/Thumb/Thumbnail_4.png" alt=""></div>
+            <div class="card-info">
+              <h3>Card 04</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="card Art">
+            <div class="card-image"><img src="./Images/Thumb/Thumbnail_5.png" alt=""></div>
+            <div class="card-info">
+              <h3>Card 05</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="card Art">
+            <div class="card-image"><img src="./Images/Thumb/Thumbnail_6.png" alt=""></div>
+            <div class="card-info">
+              <h3>Card 06</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image"><img src="7.jpg" alt=""></div>
+            <div class="card-info">
+              <h3>Card 07</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image"><img src="8.jpg" alt=""></div>
+            <div class="card-info">
+              <h3>Card 08</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image"><img src="9.jpg" alt=""></div>
+            <div class="card-info">
+              <h3>Card 09</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image"><img src="10.jpg" alt=""></div>
+            <div class="card-info">
+              <h3>Card 10</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image"><img src="11.jpg" alt=""></div>
+            <div class="card-info">
+              <h3>Card 11</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image"><img src="12.jpg" alt=""></div>
+            <div class="card-info">
+              <h3>Card 12</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image"><img src="13.jpg" alt=""></div>
+            <div class="card-info">
+              <h3>Card 13</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image"><img src="14.jpg" alt=""></div>
+            <div class="card-info">
+              <h3>Card 14</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image"><img src="15.jpg" alt=""></div>
+            <div class="card-info">
+              <h3>Card 15</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image"><img src="16.jpg" alt=""></div>
+            <div class="card-info">
+              <h3>Card 16</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image"><img src="17.jpg" alt=""></div>
+            <div class="card-info">
+              <h3>Card 17</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image"><img src="18.jpg" alt=""></div>
+            <div class="card-info">
+              <h3>Card 18</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image"><img src="19.jpg" alt=""></div>
+            <div class="card-info">
+              <h3>Card 19</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image"><img src="20.jpg" alt=""></div>
+            <div class="card-info">
+              <h3>Card 20</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image"><img src="21.jpg" alt=""></div>
+            <div class="card-info">
+              <h3>Card 21</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image"><img src="22.jpg" alt=""></div>
+            <div class="card-info">
+              <h3>Card 22</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image"><img src="23.jpg" alt=""></div>
+            <div class="card-info">
+              <h3>Card 23</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image"><img src="24.jpg" alt=""></div>
+            <div class="card-info">
+              <h3>Card 24</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image"><img src="25.jpg" alt=""></div>
+            <div class="card-info">
+              <h3>Card 25</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image"><img src="26.jpg" alt=""></div>
+            <div class="card-info">
+              <h3>Card 26</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image"><img src="27.jpg" alt=""></div>
+            <div class="card-info">
+              <h3>Card 27</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image"><img src="28.jpg" alt=""></div>
+            <div class="card-info">
+              <h3>Card 28</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image"><img src="29.jpg" alt=""></div>
+            <div class="card-info">
+              <h3>Card 29</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image"><img src="30.jpg" alt=""></div>
+            <div class="card-info">
+              <h3>Card 30</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+        <div class="pagination">
+          <!--<li class="page-item previous-page disable"><a class="page-link" href="#">Prev</a></li>
+          <li class="page-item current-page active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item dots"><a class="page-link" href="#">...</a></li>
+          <li class="page-item current-page"><a class="page-link" href="#">5</a></li>
+          <li class="page-item current-page"><a class="page-link" href="#">6</a></li>
+          <li class="page-item dots"><a class="page-link" href="#">...</a></li>
+          <li class="page-item current-page"><a class="page-link" href="#">10</a></li>
+          <li class="page-item next-page"><a class="page-link" href="#">Next</a></li>-->
+        </div>
+      </div>
+
+      <script>
+        src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7DvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorgin="anonymous"
+      </script>
+
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $(".list").click(function(){
+            const value = $(this).attr('data-filter');
+            if(value == 'all'){
+              $('.card').show('1000');
+            }
+            else{
+              $('.card').not('.'+value).hide('1000');
+              $('.card').filter('.'+value).show('1000');
+            }
+          })
+        })
+      </script>
   
-    <ol class="filters">
-      <li>
-      <label for="All">All</label>
-      </li>
-      <li>
-      <label for="Art">Art</label>
-      </li>
-      <li>
-      <label for="Photography">Photography</label>
-      </li>
-      <li>
-      <label for="jQuery">Blog Posts</label>
-      </li>
-      <li>
-      <label for="WordPress">Github</label>
-      </li>
-    </ol>  
-
-    <ol class="posts" style="display: none">
-      <li class="post" data-category="Art">
-      <article>
-          <figure>
-              <img src="./images/Thumb/Thumbnail_1.png" alt="">
-          <figcaption>
-              <ol class="post-categories">
-              <li>
-                  <a href="">Art</a>
-              </li>
-              </ol>
-              <h2 class="post-title">
-              <p>
-                ColorFul Paint Brush
-              </p>
-              </h2>
-          </figcaption>
-          </figure>
-      </article>
-      </li>
-      <li class="post" data-category="Art">
-      <article>
-          <figure>
-              <img src="./images/Thumb/Thumbnail_2.png" alt="">
-          <figcaption>
-              <ol class="post-categories">
-              <li>
-                  <a href="">Art</a>
-              </li>
-              </ol>
-              <h2 class="post-title">
-              <p>
-                Feathered Bird
-              </p>
-              </h2>
-          </figcaption>
-          </figure>
-      </article>
-      </li>
-      <li class="post" data-category="Art">
-      <article>
-          <figure>
-              <img src="./images/Thumb/Thumbnail_3.png" alt="">
-          <figcaption>
-              <ol class="post-categories">
-              <li>
-                  <a href="">Art</a>
-              </li>
-              </ol>
-              <h2 class="post-title">
-              <p>
-                Wolf Crow
-              </p>
-              </h2>
-          </figcaption>
-          </figure>
-      </article>
-      </li>
-      <li class="post" data-category="Art">
-      <article>
-          <figure>
-              <img src="./images/Thumb/Thumbnail_4.png" alt="">
-          <figcaption>
-              <ol class="post-categories">
-              <li>
-                  <a href="">Art</a>
-              </li>
-              </ol>
-              <h2 class="post-title">
-              <p>
-                Peacock Mermaind
-              </p>
-              </h2>
-          </figcaption>
-          </figure>
-      </article>
-      </li>
-      <li class="post" data-category="Art">
-      <article>
-          <figure>
-              <img src="./images/Thumb/Thumbnail_5.png" alt="">
-          <figcaption>
-              <ol class="post-categories">
-              <li>
-                  <a href="">Art</a>
-              </li>
-              </ol>
-              <h2 class="post-title">
-              <p>
-                Blue Jay In Many Seasons
-              </p>
-              </h2>
-          </figcaption>
-          </figure>
-        </article>
-        </li>
-        <li class="post" data-category="Art">
-        <article>
-            <figure>
-                <img src="./images/Thumb/Thumbnail_6.png" alt="">
-            <figcaption>
-                <ol class="post-categories">
-                <li>
-                    <a href="">Art</a>
-                </li>
-                </ol>
-                <h2 class="post-title">
-                <p>
-                  The Girl, Turtle, and the Ocean
-                </p>
-                </h2>
-            </figcaption>
-            </figure>
-        </article>
-        </li>
-        <li class="post" data-category="Photography">
-        <article>
-            <figure>
-                <img src="./images/photography/photo_1.jpg" alt="">
-            <figcaption>
-                <ol class="post-categories">
-                <li>
-                    <a href="">Photography</a>
-                </li>
-                </ol>
-                <h2 class="post-title">
-                <p>
-                  Smile More
-                </p>
-                </h2>
-            </figcaption>
-            </figure>
-        </article>
-        </li>
-    </ol>
-    </div>
-</section>
-
-  <!-- Pagination -->
-  <div class="pagination">
-    <!--<li class="page-item previous-page disable"><a class="page-link" href="#">Prev</a></li>
-    <li class="page-item current-page active"><a class="page-link" href="#">1</a></li>
-    <li class="page-item dots"><a class="page-link" href="#">...</a></li>
-    <li class="page-item current-page"><a class="page-link" href="#">5</a></li>
-    <li class="page-item current-page"><a class="page-link" href="#">6</a></li>
-    <li class="page-item dots"><a class="page-link" href="#">...</a></li>
-    <li class="page-item current-page"><a class="page-link" href="#">10</a></li>
-    <li class="page-item next-page"><a class="page-link" href="#">Next</a></li>-->
-  </div>
-
-  <script type="text/javascript">
-    function getPageList(totalPages, page, maxLength){
-      function range(start, end){
-        return Array.from(Array(end - start + 1), (_, i)=> i + start)
+      <script type="text/javascript">
+      function getPageList(totalPages, page, maxLength){
+        function range(start, end){
+          return Array.from(Array(end - start + 1), (_, i) => i + start);
+        }
+  
+        var sideWidth = maxLength < 9 ? 1 : 2;
+        var leftWidth = (maxLength - sideWidth * 2 - 3) >> 1;
+        var rightWidth = (maxLength - sideWidth * 2 - 3) >> 1;
+  
+        if(totalPages <= maxLength){
+          return range(1, totalPages);
+        }
+  
+        if(page <= maxLength - sideWidth - 1 - rightWidth){
+          return range(1, maxLength - sideWidth - 1).concat(0, range(totalPages - sideWidth + 1, totalPages));
+        }
+  
+        if(page >= totalPages - sideWidth - 1 - rightWidth){
+          return range(1, sideWidth).concat(0, range(totalPages - sideWidth - 1 - rightWidth - leftWidth, totalPages));
+        }
+  
+        return range(1, sideWidth).concat(0, range(page - leftWidth, page + rightWidth), 0, range(totalPages - sideWidth + 1, totalPages));
       }
-
-      var sidewidth = maxLength < 9 ? 1 : 2;
-      var leftWidth = (maxLength - sideWidth * 2 - 3) >> 1;
-      var rightWidth = (maxLength - sideWidth * 2 - 3) >> 1;
-
-      if(totalPages <= maxlength){
-        return range(1, totalPages);
-      }
-
-      if(page <= maxlength - sideWidth - 1 - rightWidth){
-        return range(1, maxLength - sideWidth - 1).concat(0, range(totalPages - sideWidth + 1, totalPages));
-      }
-
-      if(page >= totalPages - sideWidth - 1 - rightWidth){
-        return range(1, sideWidth).concat(0, range(totalPages-sideWidth - 1 - rightWidth - leftWidth, totalPages));
-      }
-
-      return range(1, sideWidth).concat(0, range(page - screenLeft, page + rightWidth), 0, range(totalPages - sideWidth + 1, totalPages));
-    }
-
-    $(function(){
-      var numberOfItems = $(".posts .post").length;
-      var limitPerPage = 6;
-      var totalPages = Math.ceil(numberOfItems / limitPerPage);
-      var paginationSize = 7;
-      var currentPage;
-
-      function showPage(whichPage){
-        if(whichPage < 1 || whichPage > totalPages) return false;
-
-        currentPage = whichPage;
-
-        $(".posts .post").hide().slice((currentPage - 1) * limitPerPage, currentPage * limitPerPage).show();
-
-        $(".pagination li").slice(1, -1).remove();
-
-        getPageList(totalPages, currentPage, paginationSize).forEach(item => {
-          $("<li>").addClass("page-item").addClass(item ? "current-page" : "dots")
-          .toggleClass("active", item === currentPage).append("<a>").addClass("page-link")
-          .attr({href: "javascript:void(0)"}).text(item || "...")).insertBefore(".next-page")
+  
+      $(function(){
+        var numberOfItems = $(".card-content .card").length;
+        var limitPerPage = 6; //How many card items visible per a page
+        var totalPages = Math.ceil(numberOfItems / limitPerPage);
+        var paginationSize = 7; //How many page elements visible in the pagination
+        var currentPage;
+  
+        function showPage(whichPage){
+          if(whichPage < 1 || whichPage > totalPages) return false;
+  
+          currentPage = whichPage;
+  
+          $(".card-content .card").hide().slice((currentPage - 1) * limitPerPage, currentPage * limitPerPage).show();
+  
+          $(".pagination li").slice(1, -1).remove();
+  
+          getPageList(totalPages, currentPage, paginationSize).forEach(item => {
+            $("<li>").addClass("page-item").addClass(item ? "current-page" : "dots")
+            .toggleClass("active", item === currentPage).append($("<a>").addClass("page-link")
+            .attr({href: "javascript:void(0)"}).text(item || "...")).insertBefore(".next-page");
+          });
+  
+          $(".previous-page").toggleClass("disable", currentPage === 1);
+          $(".next-page").toggleClass("disable", currentPage === totalPages);
+          return true;
+        }
+  
+        $(".pagination").append(
+          $("<li>").addClass("page-item").addClass("previous-page").append($("<a>").addClass("page-link").attr({href: "javascript:void(0)"}).text("Prev")),
+          $("<li>").addClass("page-item").addClass("next-page").append($("<a>").addClass("page-link").attr({href: "javascript:void(0)"}).text("Next"))
+        );
+  
+        $(".card-content").show();
+        showPage(1);
+  
+        $(document).on("click", ".pagination li.current-page:not(.active)", function(){
+          return showPage(+$(this).text());
         });
-
-        $(".previous-page").toggleClass("disable", currentPage === 1);
-        $(".next-page").toggleClass("disable", currentPage === totalPages);
-        return true;
-      }
-      
-      $(".pagination").append(
-        $("<li>").addClass("page-item").addClass("previous-page").append($("<a>").addClass("page-link").attr({href: "javascript:void(0)"}).text("Prev")),
-        $("<li>").addClass("page-item").addClass("next-page").append($("<a>").addClass("page-link").attr({href: "javascript:void(0)"}).text("Next")),
-      );
-          $(".posts").show();
-          showPage(1);
-
-    });
-  </script>
+  
+        $(".next-page").on("click", function(){
+          return showPage(currentPage + 1);
+        });
+  
+        $(".previous-page").on("click", function(){
+          return showPage(currentPage - 1);
+        });
+      });
+      </script>
 
   <!-- Images of Me -->
   <div class="w3-row-padding w3-padding-16" id="about">
