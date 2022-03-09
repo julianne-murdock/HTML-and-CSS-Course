@@ -32,12 +32,3 @@ You will find a space website, a movie theater website, some other small project
 ## Authors
 
 I coded all of these projects except some of them in the Moving_Up_HTML_CSS folder. These projects were based on the assignments assigned to me at The Tech Academy!
-
-## Acknowledgments
-
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46) 
